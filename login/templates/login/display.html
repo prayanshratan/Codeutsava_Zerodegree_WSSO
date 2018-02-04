@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<body id="yeah" onload="animateDiv()">
+<link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}"/>
+<script type="text/javascript" src="{% static 'login/script.js' %}"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<!--<script>
+    var randomSpeed = 3;
+var ohno = document.getElementsByClassName("background");
+var height = ohno.clientHeight;
+
+function Elements() {
+    var randomNum = Math.floor((Math.random() * 6)+ 1);
+    animatePic();
+
+    function animatePic() {
+        var chosenPic = document.getElementById('backgrounds' + randomNum);
+
+        TweenMax.to(chosenPic, randomSpeed, {y: height * 2, ease: Circ.easeInOut});
+
+    }
+}
+
+</script>-->
+<button id="choose" onclick="choose()">Choose</button>
+
+{% for user in all_users %}
+   <div class="flip-container">
+        <div class="ch-item">
+            <div class="background" id="backgrounds{{ forloop.counter }}">
+                <div class="transbox" id="front{{ forloop.counter }}">
+                    <p id="p">{{ user.username }}</p><br>
+                </div>
+                <div class="ch-info-back" id="back{{ forloop.counter }}">
+                    <h3>congrats {{ user.email }}!</h3><br>
+
+                </div>
+            </div>
+        </div>
+   </div>
+
+    </body>
+{% endfor %}
+
+<input type="hidden" id="hehe" value="{{ all_users|length }}">

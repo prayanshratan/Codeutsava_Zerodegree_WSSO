@@ -1,0 +1,92 @@
+
+
+<br>
+<br>
+<br>
+<br>
+User - {{ user.username }}<br>
+Email - {{ user.email }}<br>
+List of all Contaminated Habitations (2016 - 2017)<br><br>
+
+
+<html>
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <body>
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.mdws.gov.in/">WSSO</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+
+        </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li><a href="file:///media/prayansh/New%20Volume/WSSO/forms/signup/signup.html#"><i class="fa fa-user-plus" aria-hidden="true"></i>
+        Sign Up</a></li>-->
+        <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>
+        Log Out</a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<table border="1" class="table">
+		<tr>
+			<td scope="col">District</td>
+			<td scope="col">Block</td>
+			<td scope="col">Panchayat</td>
+			<td scope="col">Village</td>
+			<td scope="col">Habitation</td>
+			<td scope="col">Parameter Name</td>
+			<td scope="col">BIS Permissible Limit</td>
+			<td scope="col">Actual Level</td>
+            <td scope="col">Status</td>
+            <td></td>
+		</tr>
+        {% for data in all_datas %}
+		<tr>
+			<td>{{ data.District }}</td>
+			<td>{{ data.Block }}</td>
+			<td>{{ data.Panchayat }}</td>
+			<td>{{ data.Village }}</td>
+			<td>{{ data.Habitation }}</td>
+			<td>{{ data.Parameter }}</td>
+			<td>{{ data.Permissible_limit}}</td>
+			<td>{{ data.Actual_level }}</td>
+            {% if data.Actual_level < 1.20000 %}
+                <td style="color: red">not OK</td>
+                <td><a href={% url 'send' %} > Send </a></td>
+            {% else %}
+                <td style="color: green">OK</td>
+            {% endif %}
+
+
+		</tr>
+        {% endfor %}
+	</table>
+</body>
+</html>
+
+

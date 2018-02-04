@@ -1,0 +1,7 @@
+hi {{ user.username }}
+    There has been contamination in the area
+    {% for data in all_datas %}
+        {% if data.Actual_level < 1.20000 %}
+            https://www.google.com/maps/search/?api=1&query={{ data.Village }}
+        {% endif %}
+    {% endfor %}

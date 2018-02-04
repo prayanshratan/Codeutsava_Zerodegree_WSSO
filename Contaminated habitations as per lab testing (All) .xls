@@ -1,0 +1,104 @@
+<html xmlns:x='urn:schemas-microsoft-com:office:excel'><head><style>html,body {	margin: 0px;	height:100%;	font-family: Arial,Verdana, Helvetica, sans-serif;}a {	color: #000000;	text-decoration: none;}a:hover {	text-decoration : underline;}.printcolor{    color : Black;}thead {    display: table-header-group; } tfoot {     display: table-footer-group; } .LeftPane{     background-color :#F5F5F9;     margin: 0 0 0 0;     font-size : 10px;}.UperLinks{   vertical-align:middle;   font-size : 10px;   font-weight:bold;}.ReportSectionHeader {   background-image : url('Images/ReportSectionHeader.png');   font-size : 11px;   font-weight:bold;}.ReportSection{   background-image : url('Images/ReportSectionHeader.png');   font-size : 11px;}.ReportHeading{   font-size : 16px;   text-align : center;   font-weight:bold;   color : Black;   }.ReportSubHeading{   font-size : 11px;   font-weight:bold;   color : Black;   text-align: left;}.ReportFooter{   font-size : 10px;   font-weight:bold;}.TableFooter{   display: table-header-group;    font-size : 8px;   font-weight:bold;}.ReportTable{   border-collapse :collapse;    border-left : 1px solid Black;}.OuterReportTable{   border-collapse :collapse; }.ReportTable th {	font-size : 12px;	font-weight:bold;	color: black;	border-right: 1px solid Black;	border-bottom: 1px solid Black;	border-top: 1px solid Black;	letter-spacing: 0px;		text-align: center;	padding: 0px 0px 0px 0px;	/*background: #CAE8EA url(Images/bg_header.jpg) no-repeat;*/	font-weight :bold;	/*mso-number-format:"\@"; */}.ReportTable td {    font-size : 11px;    border-top: 1px solid Black;	border-right: 1px solid Black;	border-bottom: 1px solid Black;	padding: 0px 1px 0px 1px;	color: black;	text-align: left;		/*mso-number-format:"\@"; */}.SNewFontReportTable{   border-collapse :collapse;    border-left : 1px solid #bbd9ee;	}.SNewFontReportTable tr:hover {	background-color: #fffacd; } .SNewFontReportTable th {	font-size : 11px;	font-weight:bold;	color: black;	border-right: 2px solid Black;	border-bottom: 2px solid Black;	border-top: 2px solid Black;	letter-spacing: 0px;		text-align: center;	padding: 0px 0px 0px 0px;	/*background: #CAE8EA url(Images/bg_header.jpg) no-repeat;*/	font-weight :bold;	/*mso-number-format:"\@"; */}.SNewFontReportTable td {    font-size : 10px;    border-top: 1px solid Black;	border-right: 1px solid Black;	border-bottom: 1px solid Black;	padding: 0px 1px 0px 1px;	color: black;	text-align: left;	text-transform :capitalize;	/*mso-number-format:"\@"; */}.oddrowcolor{	background-color: #FFFFFF;}.evenrowcolor{	background-color: #FFFFFF;}.ReportTable tr:hover {background-color: #fffacd;}.hidden{    display : none;}.SelectedParameter{    font-size: 10px;	font-weight: bold;}.dropDownStyle {	border-left: 1px groove #000000;	border-right: 1px groove #000000;	border-top: 1px groove #666666;	border-bottom: 1px groove #CCCCCC;	font-family: Arial, Helvetica, sans-serif;	font-size: 11px;	font-weight: normal;	text-decoration: none;	letter-spacing: normal;	word-spacing: normal;	width :auto;	height: 18px;}.AlignRight {	TEXT-ALIGN: right; 	width:100%;}.GridviewTable td {    font-size : 11px;    border-top: 1px solid #bbd9ee;	border-right: 1px solid #bbd9ee;	border-bottom: 1px solid #bbd9ee;	padding: 0px 1px 0px 1px;	color: black;	text-transform :capitalize;	/*mso-number-format:"\@"; */}.PrintGrid td{    font-size:11px;    font-family:Arial, Helvetica, sans-serif;    font-weight: bold;}</style></head><body><form method="post" action="rpt_WQM_QAffectedHabByLabTesting_List.aspx" id="ctl00" runat="server">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="
+__VIEWSTATE" value="" />
+</div>
+<div id="reportContent">
+            <table width="95%" class="OuterReportTable">
+                <tr>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td align="left" style="font-size: 10px; font-weight: bold; width:8%;" class="SelectedParameter">
+                                    <span id="lblSelected_Page" style="display:inline-block;width:70%;"></span>
+                                </td>
+                                <td class="ReportHeading" style="width: 92%">
+                                    <span id="lblHeader">Contaminated habitations as per lab testing (All) - (2016-2017)</span>
+                                </td>
+                                <div id="cu">
+	
+                                        <td class="ReportHeading">
+                                            <input type="image" name="convertToEXCEL" id="convertToEXCEL" src="../../Images/excel_icon.jpg" style="height:22px;width:22px;border-width:0px;" />
+                                        </td>
+                                        <td class="ReportHeading">
+                                            <input type="image" name="print" id="print" src="../../Images/print_icon.jpg" style="height:22px;width:22px;border-width:0px;" />
+                                        </td>
+                                    
+</div>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr id="trH">
+                    <td align="left" class="SelectedParameter" style="display: block">
+                        <span id="lblSelectedParameter"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                                <table id="tableReportTable" class="ReportTable" width="100%">
+                                    <thead>
+                                        <div id="rpt_ctl27_theadReport"><tr><th style= 'text-transform :none;'>S. No.</th><th style= 'text-transform :none;'>State</th><th style= 'text-transform :none;'>District</th><th style= 'text-transform :none;'>Block</th><th style= 'text-transform :none;'>Panchayat</th><th style= 'text-transform :none;'>Village</th><th style= 'text-transform :none;'>Habitation</th><th style= 'text-transform :none;'>Parameter Name</th><th style= 'text-transform :none;'>BIS Permissible Limit</th><th style= 'text-transform :none;'>ActualLevel</th><th style= 'text-transform :none;'>Habitation Status <br/> as on 03/02/2018</th></tr></div>
+                                    </thead>
+                            
+                                <tr><td>1</td><td>CHHATTISGARH</td><td>BALOD</td><td>BALOD</td><td>DEWARBHAT</td><td>DEWAR BHAT</td><td>GASTITOLA</td><td>Iron</td><td>1.00</td><td>1.50</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>2</td><td>CHHATTISGARH</td><td>BALOD</td><td>BALOD</td><td>DEWARBHAT</td><td>TAALGAON( F.V.)</td><td>TALGAON</td><td>Iron</td><td>1.00</td><td>1.30</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>3</td><td>CHHATTISGARH</td><td>BALOD</td><td>BALOD</td><td>HIRAPUR</td><td>HIRAPUR</td><td>HIRAPUR</td><td>Iron</td><td>1.00</td><td>1.10</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>4</td><td>CHHATTISGARH</td><td>BALOD</td><td>BALOD</td><td>MULLAGURA</td><td>GODPAL</td><td>GONDPAL</td><td>Iron</td><td>1.00</td><td>1.20</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>5</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDI</td><td>DHOBEDAND</td><td>DHOBEDUND</td><td>DHOBEDAND</td><td>Iron</td><td>1.00</td><td>1.20</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>6</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDI</td><td>DHOBEDAND</td><td>KONDEKASA</td><td>KONDEKASA</td><td>Iron</td><td>1.00</td><td>1.50</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>7</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDI</td><td>SINGHOLA</td><td>SINGHOLA</td><td>SINGHOLA</td><td>Fluoride</td><td>1.50</td><td>2.25</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>8</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDILOHARA</td><td>BAIHAKUWA</td><td>BAIHAKUWA</td><td>BAIHAKUWA</td><td>Iron</td><td>1.00</td><td>1.30</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>9</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDILOHARA</td><td>BHANWARMARA</td><td>MATRI</td><td>MATARI</td><td>Iron</td><td>1.00</td><td>1.70</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>10</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDILOHARA</td><td>BHIMATOLA</td><td>ANNU TOLA</td><td>ANNUTOLA</td><td>Iron</td><td>1.00</td><td>1.10</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>11</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDILOHARA</td><td>CHILHATIKA;LA</td><td>CHILHATI KALAN</td><td>CHILHATIKALA</td><td>Iron</td><td>1.00</td><td>1.50</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>12</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDILOHARA</td><td>GANJAIDIH</td><td>GANJAIDIH</td><td>GANJAIDIH</td><td>Iron</td><td>1.00</td><td>1.30</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>13</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDILOHARA</td><td>KHOLJHAR</td><td>KHOLAJHAR</td><td>KHOLGHAR</td><td>Iron</td><td>1.00</td><td>1.70</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>14</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDILOHARA</td><td>MADIYAKATTA</td><td>MADIYA KATTA</td><td>MADIYAKATTA</td><td>Iron</td><td>1.00</td><td>1.20</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>15</td><td>CHHATTISGARH</td><td>BALOD</td><td>DONDILOHARA</td><td>SIVANI</td><td>SIWANI</td><td>SIVANI</td><td>Iron</td><td>1.00</td><td>1.30</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>16</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>BOHARA</td><td>BOHARA</td><td>BOHARA</td><td>Iron</td><td>1.00</td><td>1.01</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>17</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>DARGAHAN</td><td>DOKLA</td><td>DOKLA</td><td>Iron</td><td>1.00</td><td>1.10</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>18</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>HITEKASA</td><td>GOTATOLA</td><td>GOTATOLA</td><td>Iron</td><td>1.00</td><td>1.70</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>19</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>HITEKASA</td><td>RUPUTOLA</td><td>RUPUTOLA</td><td>Iron</td><td>1.00</td><td>1.70</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>20</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>KAPARMETA</td><td>KOSMI</td><td>KOSMI</td><td>Iron</td><td>1.00</td><td>1.20</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>21</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>KARREJHAR</td><td>ALORI</td><td>ALORI</td><td>Iron</td><td>1.00</td><td>1.10</td><td>Quality Affected</td></tr>
+                            
+                                <tr><td>22</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>KARREJHAR</td><td>NAGBELDIH</td><td>NAGBELDIH</td><td>Iron</td><td>1.00</td><td>1.50</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>23</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>MUDGAHAN</td><td>SOHTARA</td><td>SOHTARA</td><td>Iron</td><td>1.00</td><td>1.40</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>24</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>THEKWADIH</td><td>THEKWADIH</td><td>THEKWADIH</td><td>Iron</td><td>1.00</td><td>1.20</td><td>Fully Covered</td></tr>
+                            
+                                <tr><td>25</td><td>CHHATTISGARH</td><td>BALOD</td><td>GURUR</td><td>USARWARA</td><td>USARWARA</td><td>USARWARA</td><td>Iron</td><td>1.00</td><td>1.10</td><td>Fully Covered</td></tr>
+                            
+                                <div id="rpt_ctl53_tfootReport"></div>
+                                </table>
+                            
+                    </td>
+                </tr>
+                <tr>
+                    <td><divfootertext></divfootertext></td>
+                </tr>
+            </table>
+        </div></form></body></html>

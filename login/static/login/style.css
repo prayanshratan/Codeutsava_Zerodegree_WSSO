@@ -1,0 +1,115 @@
+/*@keyframes moveX {
+   from { left: 0; } to { left: 880px; }
+}*/
+@keyframes moveY {
+    to {top: 850px;}
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+div.background, .ch-info-back, .transbox{
+    background: url("images/ticket.png") no-repeat;
+
+    z-index: 2;
+    height: 128px;
+    width: 238px;
+    position: fixed;
+    /*animation: rotate 2s linear infinite;*/
+    /*transition: transform .5s;*/
+    float: left;
+    box-shadow: 12px 12px 12px #999999;
+}
+
+
+
+div.transbox {
+    /*margin-top: 30px;
+    border-top: 30px;*/
+}
+
+
+div.transbox p, div.ch-info-back h3 {
+  /*margin: 10%;
+  border: 300px;
+  padding-left: 100px;
+  padding-top: 42px;*/
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+
+}
+body{
+    background-color: lightskyblue;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 9px 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+.transbox, .ch-info-back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ch-info-back{
+    font-size: 0.7em;
+}
+
+.ch-info-back{
+    transform: rotateY(180deg);
+}
+
+/*.ch-item{
+    -webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+
+}*/
+
+/*.flip-container {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+
+  perspective: 1000px;
+
+}*/
+
+.flip-container:hover .background,
+.flip-container.hover .background {
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
